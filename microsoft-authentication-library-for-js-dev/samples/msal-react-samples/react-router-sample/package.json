@@ -1,0 +1,50 @@
+{
+  "name": "react-router-sample",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@azure/msal-browser": "file:../../../lib/msal-browser",
+    "@azure/msal-react": "file:../../../lib/msal-react",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/material": "^5.10.17",
+    "core-js": "^3.8.3",
+    "react": "file:../../../lib/msal-react/node_modules/react",
+    "react-app-polyfill": "^2.0.0",
+    "react-dom": "file:../../../lib/msal-react/node_modules/react-dom",
+    "react-router-dom": "^6.7.0",
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "jest",
+    "build": "react-scripts build",
+    "build:package": "cd ../../../lib/msal-react & npm run build:all",
+    "eject": "react-scripts eject",
+    "install:local": "npm install ../../../lib/msal-react ../../../lib/msal-react/node_modules/react ../../../lib/msal-react/node_modules/react-dom ../../../lib/msal-browser",
+    "install:published": "npm install @azure/msal-browser@latest @azure/msal-react@latest react@^18 react-dom@^18"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie 11"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^27.0.4"
+  }
+}
